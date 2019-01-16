@@ -1,0 +1,7 @@
+name = "Ecosystem"
+uuid = "4fe1505f-a16a-53bc-9ab9-8272b65a8a78"
+license = "ISC"
+
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
