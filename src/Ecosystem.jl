@@ -2,7 +2,7 @@ using Pkg: TOML.parsefile, Types.VersionRange
 using DataFrames, CSV
 
 function parse_package(name)
-    dir = "$(homedir())/.julia/registries/General/$(name[1:1])/$name"
+    dir = "$(homedir())/.julia/registries/General/$(uppercase(name[1:1]))/$name"
     version = parsefile("$dir/Versions.toml") |>
         keys |>
         (k -> maximum(VersionNumber, k))
